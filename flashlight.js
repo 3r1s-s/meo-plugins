@@ -24,5 +24,4 @@ function flashlight(e) {
   document.body.style.setProperty("--flashy", `${e.clientY - window.innerHeight / 2}px`);
 }
 
-addEventListener("mousemove", flashlight);
-addEventListener("touchmove", (e) => {flashlight(e.changedTouches[0])});
+addEventListener("pointermove", flashlight);
