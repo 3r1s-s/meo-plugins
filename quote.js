@@ -1,5 +1,5 @@
 async function makeQuote(postid) {
-    const data = await fetch(`https://api.meower.org/posts?id=${postid}`).then(res => res.json());
+    const data = await fetch(`https://api.meower.org/posts?id=${postid}`, {headers: {token: localStorage.getItem("token")}}).then(res => res.json());
     const avatarUrl = `https://uploads.meower.org/icons/${data.author.avatar}`;
     if (data.p) {
         const avatarImg = new Image();
