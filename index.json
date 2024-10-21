@@ -179,5 +179,12 @@
     "description": "a",
     "script": "https://raw.githubusercontent.com/3r1s-s/meo-plugins/main/explosion.js",
     "flags": "0"
+},
+{
+    "name": "Reactions",
+    "creator": "DaGreenBoi",
+    "description": "Allows you to react to Posts in Meo!",
+    "script": "https://raw.githubusercontent.com/3r1s-s/meo-plugins/main/reactions.js",
+    "flags": "0"
 }
 ]
