@@ -221,5 +221,12 @@
     "description": "A plugin that allows you to create your own post signatures",
     "script": "https://raw.githubusercontent.com/3r1s-s/meo-plugins/main/signatures.js",
     "flags": "0"
+},
+{
+    "name": "No livechat",
+    "creator": "WlodekM",
+    "description": "Who uses livechat anyways",
+    "script": "https://raw.githubusercontent.com/3r1s-s/meo-plugins/main/nolc.js",
+    "flags": "1"
 }
 ]
