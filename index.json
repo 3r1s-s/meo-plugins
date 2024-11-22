@@ -235,5 +235,12 @@
     "description": "Remove yourself from the online user list",
     "script": "https://raw.githubusercontent.com/3r1s-s/meo-plugins/main/lurk.js",
     "flags": "0"
+},
+{
+    "name": "DOOM",
+    "creator": "WlodekM",
+    "description": "But can it play DOOM? (it can now)",
+    "script": "https://raw.githubusercontent.com/3r1s-s/meo-plugins/main/doom.js",
+    "flags": "1"
 }
 ]
