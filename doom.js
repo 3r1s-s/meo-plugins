@@ -12,6 +12,27 @@ settingsPages['doom'] = {
         pageContainer.innerHTML = `
             <canvas id="doomcanvas"></canvas>
         `;
+        const script = document.createElement('script');
+        script.src = 'https://js-dos.com/6.22/current/js-dos.js';
+        script.onload = function() {
+            const canvas = document.getElementById("doomcanvas");
+            const dosInstance = Dos(canvas, {
+                wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
+                cycles: 1000,
+                autolock: false,
+            });
+
+            dosInstance.ready(function (fs, main) {
+                fs.extract("https://js-dos.com/cdn/upload/DOOM-@evilution.zip").then(function () {
+                    main(["-c", "cd DOOM", "-c", "DOOM.EXE"]).then(function (ci) {
+                        window.ci = ci;
+                    });
+                });
+            });
+        };
+
+        // Append the script to the document's head
+        document.head.appendChild(script);
     }
 }
 
