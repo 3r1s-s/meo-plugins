@@ -10,7 +10,7 @@ settingsPages['doom'] = {
         setTop();
         let pageContainer = document.querySelector(".settings");
         pageContainer.innerHTML = `
-            <h1>But can it run doom?</h1>
+            <canvas id="doomcanvas"></canvas>
         `;
     }
 }
