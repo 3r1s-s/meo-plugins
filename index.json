@@ -228,12 +228,5 @@
     "description": "Who uses livechat anyways",
     "script": "https://raw.githubusercontent.com/3r1s-s/meo-plugins/main/nolc.js",
     "flags": "1"
-},
-{
-    "name": "Lurk mode",
-    "creator": "WlodekM",
-    "description": "Remove yourself from the online user list",
-    "script": "https://raw.githubusercontent.com/3r1s-s/meo-plugins/main/lurk.js",
-    "flags": "0"
 }
 ]
