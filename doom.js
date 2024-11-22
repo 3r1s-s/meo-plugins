@@ -10,7 +10,7 @@ settingsPages['doom'] = {
         setTop();
         let pageContainer = document.querySelector(".settings");
         pageContainer.innerHTML = `
-            <canvas id="doomcanvas"></canvas>
+            <canvas id="doomcanvas" style="aspect-ratio: 4 / 3;width: 100%"></canvas>
             <button id="startdoom">Start DOOM (warning: may be laggy)</button>
         `;
         const script = document.createElement('script');
