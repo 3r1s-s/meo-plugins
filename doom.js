@@ -11,10 +11,11 @@ settingsPages['doom'] = {
         let pageContainer = document.querySelector(".settings");
         pageContainer.innerHTML = `
             <canvas id="doomcanvas"></canvas>
+            <button id="startdoom">Start DOOM (warning: may be laggy)</button>
         `;
         const script = document.createElement('script');
         script.src = 'https://js-dos.com/6.22/current/js-dos.js';
-        script.onload = function() {
+        document.getElementById("startdoom").onclick = function() {
             const canvas = document.getElementById("doomcanvas");
             const dosInstance = Dos(canvas, {
                 wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
