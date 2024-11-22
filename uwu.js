@@ -157,6 +157,11 @@ function isUri(value) {
     return true;
 }
 
+/** @param {string} value */
+function isEmoji(value) {
+    return value.match(/<:[A-z0-9]*>/g)
+}
+
 function uwuifyExclamations(sentence) {
     const words = sentence.split(" ");
     const pattern = new RegExp("[?!]+$");
@@ -187,6 +192,7 @@ function uwuifyWords(sentence) {
     const uwuifiedSentence = words.map((word) => {
         if (isAt(word)) return word;
         if (isUri(word)) return word;
+        if (isEmoji(word)) return word;
 
         const seed = new Seed(word);
 
