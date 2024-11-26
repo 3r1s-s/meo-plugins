@@ -235,5 +235,12 @@
     "description": "Remove yourself from the online user list",
     "script": "https://raw.githubusercontent.com/3r1s-s/meo-plugins/main/lurk.js",
     "flags": "0"
+},
+{
+    "name": "Bart",
+    "creator": "WlodekM",
+    "description": "brat-like pfps",
+    "script": "https://raw.githubusercontent.com/3r1s-s/meo-plugins/main/bart.js",
+    "flags": "0"
 }
 ]
